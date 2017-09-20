@@ -4,16 +4,23 @@ public class Disco {
 	// Perimetro de un circulo:  2*PI*Radio;
 	// Superficie:    Pi*Radio^4;
 	
-	public Double radioInterior;
-	public Double radioExterior;
+	public Integer radioInterior;
+	public Integer radioExterior;
 	
-	public Double radioInterior(Double radioInterior){
+	public Disco(Integer radioInterior,Integer radioExterior){
+		
+		this.radioInterior = radioInterior;
+		this.radioExterior = radioExterior;
+		
+	}
+	
+	public Integer radioInterior(Integer radioInterior){
 		
 		this.radioInterior = radioInterior;
 		return this.radioInterior;
 	}
 
-	public Double radioExterior(Double radioExterior){
+	public Integer radioExterior(Integer radioExterior){
 		
 		this.radioExterior = radioExterior;
 		return this.radioExterior;

@@ -9,14 +9,14 @@ public class discoTest {
 			@Test
 			public void testRadioInterior() {
 			
-			Disco radioInt = new Disco();
+			Disco radioInt = new Disco(3, 5);
 			
-			Double valorObtenido;
-			Double valorEsperado;
+			Integer valorObtenido;
+			Integer valorEsperado;
 
 			
-			valorObtenido = radioInt.radioInterior(3.0);
-			valorEsperado = 3.0;
+			valorObtenido = radioInt.radioInterior(3);
+			valorEsperado = 3;
 			
 			assertEquals(valorEsperado, valorObtenido, 0.01);
 	}
